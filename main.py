@@ -19,7 +19,7 @@ st.sidebar.header("⚙️ Filter & Opsi")
 selected_nutrient = st.sidebar.selectbox("📌 Pilih Nutrisi untuk Distribusi", ['calories', 'proteins', 'fat', 'carbohydrate'])
 
 # Ambil data dari GitHub
-data_url = "https://raw.githubusercontent.com/MuhammadRofif/data/refs/heads/main/streamlit.csv"
+data_url = "https://raw.githubusercontent.com/MuhammadRofif/dashboard/refs/heads/main/streamlit.csv"
 try:
     df = pd.read_csv(data_url)
     st.sidebar.success("✅ Data berhasil dimuat")
